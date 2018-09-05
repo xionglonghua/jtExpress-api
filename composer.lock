@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3ac0f84692d181ef42649e0aab39524c",
+    "packages": [
+        {
+            "name": "lspbupt/yii2-curl",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/buptlsp/yii2-curl.git",
+                "reference": "a7725c076c964cecf4538746cfb5670efbeb28ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/buptlsp/yii2-curl/zipball/a7725c076c964cecf4538746cfb5670efbeb28ba",
+                "reference": "a7725c076c964cecf4538746cfb5670efbeb28ba",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "lspbupt\\curl\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "李仕鹏",
+                    "email": "lspbupt@sina.com"
+                }
+            ],
+            "description": "A curl encapsulation for yii2 framework",
+            "homepage": "https://github.com/buptlsp/yii2-curl",
+            "keywords": [
+                "curl",
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-01-22T07:43:07+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
