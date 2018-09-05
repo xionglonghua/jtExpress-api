@@ -2,9 +2,10 @@
   "name": "xionglonghua/yii2-jtexpress-api",
   "description": "jtExpress API for yii2 framework",
   "keywords": ["yii2", "extension", "jtExpress"],
-  "homepage": "https://github.com/xionglonghua/jtExpress-api",
+  "homepage": "https://github.com/xionglonghua/yii2-jtexpress-api",
+  "license": "MIT",
   "type": "yii2-extension",
-  "license": "BSD-3-Clause",
+  "minimum-stability": "dev",
   "authors": [
     {
       "name": "xionglonghua",
