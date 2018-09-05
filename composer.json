@@ -1,0 +1,22 @@
+{
+  "name": "xionglonghua/jtExpress-api",
+  "description": "jtExpress API for yii2 framework",
+  "keywords": ["yii2", "extension", "jtExpress"],
+  "homepage": "https://github.com/xionglonghua/jtExpress-api",
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "xionglonghua",
+      "email": "longhuadaxia@gmail.com"
+    }
+  ],
+  "require": {
+    "lspbupt/yii2-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "xionglonghua\\jtExpress\\": ""
+    }
+  }
+}
