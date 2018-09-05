@@ -23,9 +23,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
     public function init()
     {
         parent::init();
-        if (empty($this->action)) {
-            throw new InvalidParamException("Please configure action.");
-        }
+
         $this->afterRequest = function($output, $curlhttp) {
             $data = json_decode($output, true);
             if(empty($output)) {
@@ -38,8 +36,11 @@ class JtExpress extends \lspbupt\curl\CurlHttp
         };
     }
 
-    public function getOrderInfo($orderNumber = 0)
+    public function getOrderInfo($action = '', $orderNumber = 0)
     {
+        if (!$this->action = $action) {
+            throw new InvalidParamException("Please configure action.");
+        }
         return $this->setGet()->httpExec($this->action, ['awb' => $orderNumber]);
     }
 
