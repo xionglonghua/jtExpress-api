@@ -10,5 +10,5 @@
 require(__DIR__ . '/../vendor/autoload.php');
 require(__DIR__ . '/../jtExpress.php');
 
-$jt = new \lspbupt\jtExpress\JtExpress();
+$jt = new \xionglonghua\express\JtExpress();
 var_dump($jt->getOrderInfo());
