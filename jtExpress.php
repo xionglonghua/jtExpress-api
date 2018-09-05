@@ -6,7 +6,7 @@
  * Time: 下午3:11
  */
 
-namespace lspbupt\jtExpress;
+namespace xionglonghua\express;
 
 use \Yii;
 use yii\caching\Cache;
