@@ -20,8 +20,6 @@ class JtExpress extends \lspbupt\curl\CurlHttp
 
     public function init()
     {
-        parent::init();
-
         if (isset(Yii::$app->params['express']['jnt']['key'])) {
             $this->key = Yii::$app->params['express']['jnt']['key'];
         }
@@ -60,7 +58,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
             'pictype'  => 'sj,yn,lc,qs',
             'sign'     => md5(date('Ymd').'YnTrackQuery'.$billcode),
         ];
-        return $this->setPost()->httpExec('jandt_track/trackToJson.action', $data_request);
+        return $this->setPost()->httpExec('/jandt_track/trackToJson.action', $data_request);
     }
 
     public function onlineOrder($params)
@@ -80,7 +78,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
             'data_param'=>$data_json,
             'data_sign'=> base64_encode(md5($data_json.$this->key)),
         ];
-        return $this->setPost()->httpExec('JandT_ecommerce/api/onlineOrder.action', $data_request);
+        return $this->setPost()->httpExec('/JandT_ecommerce/api/onlineOrder.action', $data_request);
     }
 
 }
