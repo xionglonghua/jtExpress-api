@@ -67,7 +67,7 @@ online order:
 
 ```php
 <?php
-    $data = [
+    $params = [
         'orderid'=>'ORDERID-0001', //必填，电商的订单号
         'shipper_name'=>'PENGIRIM',  //必填，寄件人名字
         'shipper_contact'=>'PENGIRIM',  //必填，联系人名字（跟寄件人名字一样）
