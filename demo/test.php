@@ -8,7 +8,7 @@
 
 
 require(__DIR__ . '/../vendor/autoload.php');
-require(__DIR__ . '/../jtExpress.php');
+require(__DIR__ . '/../JtExpress.php');
 
 $jt = new \xionglonghua\express\JtExpress();
 var_dump($jt->getOrderInfo());
