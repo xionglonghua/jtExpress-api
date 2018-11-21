@@ -50,6 +50,7 @@ Configure Yii2 param:
             'API_KEY'      => '',
             'orderHost'    => '',
             'trackingHost' => '',
+            'cancelHost'   => '',
         ],
     ],
 ];
@@ -91,4 +92,12 @@ online order:
     Yii::$app->express->onlineOrder($params);
 ?>
 
+```
+
+cancel order :
+
+```php
+<?php
+    Yii::$app->express->cancelOrder('123765', '备注可为空');
+?>
 ```
