@@ -97,7 +97,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
      * @param string $remark
      * @return mixed
      */
-    public function cancelOrder($billCode = 0, $remark = '')
+    public function cancelOrder($orderId = 0, $remark = '')
     {
         if (isset(Yii::$app->params['express']['jnt']['cancelHost'])) {
             $this->host = Yii::$app->params['express']['jnt']['cancelHost'];
@@ -108,7 +108,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
         $data = [
             'username' => $this->username,
             'api_key'  => $this->apiKey,
-            'orderid'  => $billCode,
+            'orderid'  => $orderId,
             'remark'   => $remark,
         ];
         $data_json = json_encode(['detail'=> [$data]]);
