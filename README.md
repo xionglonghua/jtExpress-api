@@ -82,7 +82,7 @@ online order:
         'receiver_area'=>'SDA001',  //必填，收件人区域编码
         'destination_code'=>'SDA',  //必填， 目的地城市编码 （区分大小写，大字）
         'qty'=>'1',  //必填，件数
-        'weight'=>'1',  //必填，重量
+        'weight'=>'1',  //必填，重量（单位为克）
         'goodsdesc'=>'TESTING!!',  //必填，描述此件里面是什么东西
         'servicetype'=>'1', //可空，服务类型， “1”取件； ”6“上门取件
         'insurance'=>'50000', //可空，保险

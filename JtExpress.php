@@ -78,6 +78,10 @@ class JtExpress extends \lspbupt\curl\CurlHttp
         } else {
             throw new InvalidParamException("Please configure param: orderHost");
         }
+        if (!isset($params['weight'])){
+            throw new InvalidParamException("Please configure param: weight");
+        }
+        $params['weight'] = $params['weight'] / 1000;
         $data = [
             'username' => $this->username,
             'api_key'  => $this->apiKey,
