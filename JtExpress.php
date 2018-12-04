@@ -81,6 +81,7 @@ class JtExpress extends \lspbupt\curl\CurlHttp
         if (!isset($params['weight'])){
             throw new InvalidParamException("Please configure param: weight");
         }
+        //单位转换，前端传参单位默认为克(g)， jnt单位默认为千克(kg)
         $params['weight'] = $params['weight'] / 1000;
         $data = [
             'username' => $this->username,
